@@ -81,35 +81,25 @@ body {
   margin: 0 auto 20px auto;
 }
 
-/* --- Icone Social --- */
+/* --- Icone Social Vettoriali Aggiornate --- */
 .social-links {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;       /* Allinea le icone in orizzontale */
+  justify-content: center;
+  gap: 20px;           /* Spazio tra un'icona e l'altra */
 }
 
-.social-links a {
-  color: var(--teal);
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.social-links a:hover {
-  color: var(--muted-magenta);
-}
-
-/* --- Icone Social Vettoriali --- */
 .social-icon {
-  width: 32px;
-  height: 32px;
-  fill: var(--teal); /* Colore base */
-  margin: 0 12px;
-  transition: 0.3s;
-  vertical-align: middle;
+  width: 30px !important;  /* Forza la dimensione a 30px */
+  height: 30px !important;
+  fill: var(--teal);
+  transition: transform 0.2s, fill 0.2s;
 }
 
 .social-icon:hover {
-  fill: var(--muted-magenta); /* Colore quando ci passi sopra col mouse */
+  fill: var(--muted-magenta);
+  transform: scale(1.1); /* Si ingrandisce leggermente al passaggio del mouse */
 }
 
 /* Rimuovi la vecchia formattazione dei link social per evitare conflitti */
