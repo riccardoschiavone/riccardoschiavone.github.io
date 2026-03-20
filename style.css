@@ -97,3 +97,22 @@ body {
 .social-links a:hover {
   color: var(--muted-magenta);
 }
+
+/* --- Icone Social Vettoriali --- */
+.social-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--teal); /* Colore base */
+  margin: 0 12px;
+  transition: 0.3s;
+  vertical-align: middle;
+}
+
+.social-icon:hover {
+  fill: var(--muted-magenta); /* Colore quando ci passi sopra col mouse */
+}
+
+/* Rimuovi la vecchia formattazione dei link social per evitare conflitti */
+.social-links a {
+  text-decoration: none;
+}
